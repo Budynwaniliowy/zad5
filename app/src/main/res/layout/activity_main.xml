@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Domek w górach"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/obraz" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#008080">
+
+        <Button
+            android:id="@+id/polub"
+            android:layout_width="100dp"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="POLUB" />
+
+
+        <Button
+            android:id="@+id/usun"
+            android:layout_width="100dp"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="USUŃ" />
+
+        <Button
+            android:id="@+id/zapisz"
+            android:layout_width="100dp"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#008080"
+            android:text="ZAPISZ" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/licznik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="0 polubień"
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#808080"/>
+    <TextView
+        android:id="@+id/opis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opis"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/opisdom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"
+        android:padding="10dp"
+        />
+
+
+
+
+
+</LinearLayout>
